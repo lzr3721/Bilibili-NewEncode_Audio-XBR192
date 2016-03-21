@@ -1,0 +1,5 @@
+@echo off
+cls
+"%~dp0/1" -br 191500 -2pass -if %1 -of %1_Audio2pass.m4a
+cls
+start mshta vbscript:msgbox("处理结束，如果成功在原目录下会多出一个M4A文件。如果失败，原目录下什么都没有。具体详情请参考ReadMe文件。",0,"Bilibili NewEncode_Audio XBR192 V1.01 公测版 By 喵爬丝酱 At 20150319101")(window.close)&&exit 
